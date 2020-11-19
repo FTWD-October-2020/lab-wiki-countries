@@ -13,13 +13,17 @@ function App() {
     <>
       <Navbar />
 
-      <Switch>
-
-        <Route exact path='/country/:flag' render={(props) => <CountryDetails {...props} />} />
-
-      </Switch>
-
-      <CountriesList />
+      <div className="content">
+        <Switch>
+  
+          <Route exact path='/country/:flag' render={(props) => <CountryDetails {...props} />} />
+  
+        </Switch>
+        <ul>
+          <CountriesList />
+        </ul>
+      </div>
+      
 
 
     </>

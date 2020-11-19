@@ -1,10 +1,11 @@
 import React from 'react';
 
 
-const CountryDetails = () => {
+const CountryDetails = (props) => {
+    console.log(props)
     return (
 
-        <div>Country Details</div>
+        <div>Country Details {props.match.params.flag}</div>
 
     )
 }
